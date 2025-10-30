@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
-import { Head, Loader, Nav, Social, Email, Footer } from '@components';
+import { Head, Loader, Nav, Social, Email, Footer, Banner } from '@components';
 import { GlobalStyle, theme } from '@styles';
 
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 45px; /* Space for fixed banner */
+
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
 `;
 
 const Layout = ({ children, location }) => {
@@ -53,6 +58,8 @@ const Layout = ({ children, location }) => {
       <div id="root">
         <ThemeProvider theme={theme}>
           <GlobalStyle />
+
+          <Banner />
 
           <a className="skip-to-content" href="#content">
             Skip to Content

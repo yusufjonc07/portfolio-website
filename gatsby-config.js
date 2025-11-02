@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: 'https://yusuf-axmad.uz',
     image: '/og-me.png',
     twitterUsername: '@yusufjon51030',
-    languages: ['en', 'uz'],
+    languages: ['en', 'uz', 'ko'],
     defaultLanguage: 'en',
   },
   plugins: [

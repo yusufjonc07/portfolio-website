@@ -242,7 +242,16 @@ ArchivePage.propTypes = {
 
 export default ArchivePage;
 export const pageQuery = graphql`
-  {
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/projects/" } }
       sort: { frontmatter: { date: DESC } }

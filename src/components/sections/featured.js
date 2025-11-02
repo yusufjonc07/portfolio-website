@@ -6,6 +6,7 @@ import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const StyledProjectsGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
@@ -304,6 +305,7 @@ const StyledProject = styled.li`
 `;
 
 const Featured = () => {
+  const { t } = useTranslation();
   const data = useStaticQuery(graphql`
     {
       featured: allMarkdownRemark(
@@ -346,7 +348,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        {t('featured.title')}
       </h2>
 
       <StyledProjectsGrid>
@@ -360,7 +362,7 @@ const Featured = () => {
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
+                    <p className="project-overline">{t('featured.overline')}</p>
 
                     <h3 className="project-title">
                       <a href={external}>{title}</a>

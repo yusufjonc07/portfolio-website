@@ -3,27 +3,52 @@
     "about": "Men haqimda",
     "experience": "Tajriba",
     "work": "Ishlar",
-    "contact": "Aloqa"
+    "contact": "Aloqa",
+    "resume": "Rezyume"
   },
   "hero": {
     "greeting": "Salom, mening ismim",
-    "description": "Men veb uchun narsalar yarataman."
+    "name": "Yusufjon Axmedov.",
+    "title": "Full-Stack Dasturchi va CS Talabasi.",
+    "description": "Men Gachon universitetida kompyuter muhandisligi yo'nalishi bo'yicha talabaman (GPA 4.42/4.5) va 3+ yillik professional tajribaga egaman. ERP tizimlari, real-vaqt ilovalari va SaaS platformalarini yaratishda tajribam bor. Hozirda Seulda part-time ish imkoniyatlari va amaliyotlarni qidiryapman.",
+    "cta": "Ko'proq ma'lumot kerakmi?"
   },
   "about": {
-    "title": "Men haqimda"
+    "title": "Men haqimda",
+    "paragraph1": {
+      "start": "Salom! Men Yusufjon,",
+      "university": "Gachon Universiteti",
+      "end": "ning ikkinchi kurs Kompyuter muhandisligi talabasi bo'lib, kengaytiriladigan, ishlab chiqarishga tayyor tizimlarni yaratishga qiziqaman."
+    },
+    "paragraph2": "Mening dasturlash sayohatim 2021-yilda boshlanganida birinchi ishlab chiqarish tizimimni yaratdim - bu hozir 15+ gilam tozalash bizneslari tomonidan foydalaniladigan SaaS CRM platformasi. Ushbu loyiha menga haqiqiy biznes ehtiyojlarini tushunish va barqaror yechimlarni yaratishning muhimligini o'rgatdi.",
+    "paragraph3": {
+      "start": "O'shandan beri men",
+      "link": "qurilish ishlab chiqaruvchilari uchun ERP tizimini",
+      "end": "ishlab chiqdim (90% arxitektura hissasi), WebSocket integratsiyasi bilan real vaqt tibbiy yozuvlar platformasini yaratdim va ishlab chiqarish dasturlari uchun ma'lumotlar bazasi samaradorligini optimallashtiridim."
+    },
+    "paragraph4": "Bugungi kunga kelib, men Gachon Universitetida o'qiyapman va Seulning innovatsion startap ekotizimiga hissa qo'shish imkoniyatlarini faol izlayapman.",
+    "techIntro": "Men ishlaydigan ba'zi texnologiyalar:"
   },
   "experience": {
-    "title": "Qayerda ishlaganman"
+    "title": "Tajribam"
+  },
+  "featured": {
+    "title": "Men yaratgan ba'zi loyihalar",
+    "overline": "Tanlangan loyiha"
   },
   "projects": {
-    "title": "Men yaratgan ba'zi narsalar",
-    "viewArchive": "Arxivni ko'rish"
+    "title": "Boshqa diqqatga sazovor loyihalar",
+    "viewArchive": "Arxivni ko'rish",
+    "showMore": "Ko'proq ko'rsatish",
+    "showLess": "Kamroq ko'rsatish"
   },
   "contact": {
+    "overline": "Keyingi qadam nima?",
     "title": "Bog'lanish",
-    "description": "Mening pochta qutim har doim ochiq. Sizda savol bo'lsa yoki shunchaki salom aytmoqchi bo'lsangiz, men sizga javob berishga harakat qilaman!"
+    "description": "Men yangi ish imkoniyatlarini faol qidiryapman va sizdan eshitishni xohlayman. Sizda potentsial rol, savol yoki shunchaki salom aytmoqchi bo'lsangiz, bemalol bog'laning - iloji boricha tezroq javob berishga harakat qilaman!",
+    "cta": "Salom ayting"
   },
   "footer": {
-    "builtBy": "Yusufjon Ahmedov tomonidan yaratilgan"
+    "credit": "Brittany Chiang tomonidan yaratilgan va ishlab chiqilgan"
   }
 }

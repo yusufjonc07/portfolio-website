@@ -3,27 +3,52 @@
     "about": "About",
     "experience": "Experience",
     "work": "Work",
-    "contact": "Contact"
+    "contact": "Contact",
+    "resume": "Resume"
   },
   "hero": {
     "greeting": "Hi, my name is",
-    "description": "I build things for the web."
+    "name": "Yusufjon Axmedov.",
+    "title": "Full-Stack Developer & CS Student.",
+    "description": "I'm a Computer Engineering student at Gachon University (GPA 4.42/4.5) with 3+ years of professional experience building ERP systems, real-time applications, and SaaS platforms. Currently seeking part-time opportunities and internships in Seoul.",
+    "cta": "Want more information ?"
   },
   "about": {
-    "title": "About Me"
+    "title": "About Me",
+    "paragraph1": {
+      "start": "Hello! I'm Yusufjon, a sophomore Computer Engineering student at",
+      "university": "Gachon University",
+      "end": "with a passion for building scalable, production-ready systems."
+    },
+    "paragraph2": "My development journey started in 2021 when I built my first production system—a SaaS CRM platform that's now used by 15+ carpet cleaning businesses. That project taught me the importance of understanding real business needs and building maintainable solutions.",
+    "paragraph3": {
+      "start": "Since then, I've led development of an",
+      "link": "ERP system for construction manufacturers",
+      "end": "(90% architecture contribution), built a real-time medical records platform with WebSocket integration, and optimized database performance for production applications."
+    },
+    "paragraph4": "Fast-forward to today, I'm studying at Gachon University while actively seeking opportunities to contribute to Seoul's innovative startup ecosystem.",
+    "techIntro": "Here are some technologies I work with:"
   },
   "experience": {
-    "title": "Where I've Worked"
+    "title": "My Experience"
+  },
+  "featured": {
+    "title": "Some Things I've Built",
+    "overline": "Featured Project"
   },
   "projects": {
-    "title": "Some Things I've Built",
-    "viewArchive": "View the Archive"
+    "title": "Other Noteworthy Projects",
+    "viewArchive": "View the Archive",
+    "showMore": "Show More",
+    "showLess": "Show Less"
   },
   "contact": {
+    "overline": "What's Next?",
     "title": "Get In Touch",
-    "description": "My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+    "description": "I am actively seeking new job opportunities and would love to hear from you. Whether you have a potential role in mind, a question, or just want to say hello, feel free to reach out—I'll make sure to respond as soon as possible!",
+    "cta": "Say Hello"
   },
   "footer": {
-    "builtBy": "Built by Yusufjon Ahmedov"
+    "credit": "Designed & Built by Brittany Chiang"
   }
 }

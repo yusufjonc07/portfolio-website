@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { srConfig, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -42,6 +43,7 @@ const StyledContactSection = styled.section`
 `;
 
 const Contact = () => {
+  const { t } = useTranslation();
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -55,18 +57,14 @@ const Contact = () => {
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
+      <h2 className="numbered-heading overline">{t('contact.overline')}</h2>
 
-      <h2 className="title">Get In Touch</h2>
+      <h2 className="title">{t('contact.title')}</h2>
 
-      <p>
-        I am actively seeking new job opportunities and would love to hear from you. Whether you
-        have a potential role in mind, a question, or just want to say hello, feel free to reach
-        out—I’ll make sure to respond as soon as possible!
-      </p>
+      <p>{t('contact.description')}</p>
 
       <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
+        {t('contact.cta')}
       </a>
     </StyledContactSection>
   );

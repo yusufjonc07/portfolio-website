@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -49,6 +50,7 @@ const StyledHeroSection = styled.section`
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -59,23 +61,19 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Yusufjon Axmedov.</h2>;
-  const three = <h3 className="medium-heading">Full-Stack Developer & CS Student.</h3>;
+  const one = <h1>{t('hero.greeting')}</h1>;
+  const two = <h2 className="big-heading">{t('hero.name')}</h2>;
+  const three = <h3 className="medium-heading">{t('hero.title')}</h3>;
   const four = (
     <>
       <p>
-        <small>
-          I'm a Computer Engineering student at Gachon University (GPA 4.42/4.5) with 3+ years of
-          professional experience building ERP systems, real-time applications, and SaaS platforms.
-          Currently seeking part-time opportunities and internships in Seoul.
-        </small>
+        <small>{t('hero.description')}</small>
       </p>
     </>
   );
   const five = (
     <a className="email-link" href="#about">
-      Want more information ?
+      {t('hero.cta')}
     </a>
   );
 

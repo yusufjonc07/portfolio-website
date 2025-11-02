@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from '@components/icons';
 import { socialMedia } from '@config';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const StyledFooter = styled.footer`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -68,6 +69,7 @@ const StyledCredit = styled.div`
 `;
 
 const Footer = () => {
+  const { t } = useTranslation();
   const [githubInfo, setGitHubInfo] = useState({
     stars: null,
     forks: null,
@@ -106,7 +108,7 @@ const Footer = () => {
 
       <StyledCredit tabindex="-1">
         <a href="https://github.com/bchiang7/v4">
-          <div>Designed &amp; Built by Brittany Chiang</div>
+          <div>{t('footer.credit')}</div>
 
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">

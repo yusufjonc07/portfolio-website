@@ -11,7 +11,9 @@ const StyledContent = styled.div`
 `;
 
 const Layout = ({ children, location }) => {
-  const isHome = location.pathname === '/';
+  // Check if it's the home page (including language-specific home pages like /uz/ or /en/)
+  const isHome =
+    location.pathname === '/' || location.pathname === '/en/' || location.pathname === '/uz/';
   const [isLoading, setIsLoading] = useState(isHome);
 
   // Sets target="_blank" rel="noopener noreferrer" on external links

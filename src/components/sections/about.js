@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -115,6 +116,7 @@ const StyledPic = styled.div`
 `;
 
 const About = () => {
+  const { t } = useTranslation();
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -166,37 +168,27 @@ const About = () => {
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">About Me</h2>
+      <h2 className="numbered-heading">{t('about.title')}</h2>
 
       <div className="inner">
         <StyledText>
           <div>
             <p>
-              Hello! I'm Yusufjon, a sophomore Computer Engineering student at{' '}
-              <a href="https://www.gachon.ac.kr">Gachon University</a> with a passion for building
-              scalable, production-ready systems.
+              {t('about.paragraph1.start')}{' '}
+              <a href="https://www.gachon.ac.kr">{t('about.paragraph1.university')}</a>{' '}
+              {t('about.paragraph1.end')}
             </p>
+
+            <p>{t('about.paragraph2')}</p>
 
             <p>
-              My development journey started in 2021 when I built my first production system—a SaaS
-              CRM platform that's now used by 15+ carpet cleaning businesses. That project taught me
-              the importance of understanding real business needs and building maintainable
-              solutions.
+              {t('about.paragraph3.start')} <a href="#projects">{t('about.paragraph3.link')}</a>{' '}
+              {t('about.paragraph3.end')}
             </p>
 
-            <p>
-              Since then, I've led development of an{' '}
-              <a href="#projects">ERP system for construction manufacturers</a> (90% architecture
-              contribution), built a real-time medical records platform with WebSocket integration,
-              and optimized database performance for production applications.
-            </p>
+            <p>{t('about.paragraph4')}</p>
 
-            <p>
-              Fast-forward to today, I'm studying at Gachon University while actively seeking
-              opportunities to contribute to Seoul's innovative startup ecosystem.
-            </p>
-
-            <p>Here are some technologies I work with:</p>
+            <p>{t('about.techIntro')}</p>
           </div>
 
           <ul className="skills-list">

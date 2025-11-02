@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
@@ -72,3 +72,17 @@ NotFoundPage.propTypes = {
 };
 
 export default NotFoundPage;
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

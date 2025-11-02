@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'studentyusufaxmad@gmail.com',
+  email: 'yusupeu.dev@gmail.com',
 
   socialMedia: [
     {
@@ -18,19 +18,19 @@ module.exports = {
 
   navLinks: [
     {
-      name: 'About',
+      name: 'about',
       url: '/#about',
     },
     {
-      name: 'Experience',
+      name: 'experience',
       url: '/#jobs',
     },
     {
-      name: 'Work',
+      name: 'work',
       url: '/#projects',
     },
     {
-      name: 'Contact',
+      name: 'contact',
       url: '/#contact',
     },
   ],

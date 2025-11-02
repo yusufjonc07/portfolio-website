@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -165,6 +166,7 @@ const StyledTabPanel = styled.div`
 `;
 
 const Jobs = () => {
+  const { t } = useTranslation();
   const data = useStaticQuery(graphql`
     query {
       jobs: allMarkdownRemark(
@@ -243,7 +245,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">My Experience</h2>
+      <h2 className="numbered-heading">{t('experience.title')}</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>

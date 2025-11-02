@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "about": "Men haqimda",
+    "experience": "Tajriba",
+    "work": "Ishlar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "greeting": "Salom, mening ismim",
+    "description": "Men veb uchun narsalar yarataman."
+  },
+  "about": {
+    "title": "Men haqimda"
+  },
+  "experience": {
+    "title": "Qayerda ishlaganman"
+  },
+  "projects": {
+    "title": "Men yaratgan ba'zi narsalar",
+    "viewArchive": "Arxivni ko'rish"
+  },
+  "contact": {
+    "title": "Bog'lanish",
+    "description": "Mening pochta qutim har doim ochiq. Sizda savol bo'lsa yoki shunchaki salom aytmoqchi bo'lsangiz, men sizga javob berishga harakat qilaman!"
+  },
+  "footer": {
+    "builtBy": "Yusufjon Ahmedov tomonidan yaratilgan"
+  }
+}

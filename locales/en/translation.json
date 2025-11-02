@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, my name is",
+    "description": "I build things for the web."
+  },
+  "about": {
+    "title": "About Me"
+  },
+  "experience": {
+    "title": "Where I've Worked"
+  },
+  "projects": {
+    "title": "Some Things I've Built",
+    "viewArchive": "View the Archive"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+  },
+  "footer": {
+    "builtBy": "Built by Yusufjon Ahmedov"
+  }
+}

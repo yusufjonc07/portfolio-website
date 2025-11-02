@@ -60,24 +60,22 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Yusufjon Akhmedov.</h2>;
-  const three = <h3 className="big-heading">Full-Stack Developer & CS Student.</h3>;
+  const two = <h2 className="big-heading">Yusufjon Axmedov.</h2>;
+  const three = <h3 className="medium-heading">Full-Stack Developer & CS Student.</h3>;
   const four = (
     <>
       <p>
-        I'm a Computer Engineering student at{' '}
-        <a href="https://www.gachon.ac.kr" target="_blank" rel="noreferrer">
-          Gachon University
-        </a>
-        {' '}(GPA 4.42/4.5) with 3+ years of professional experience building ERP systems,
-        real-time applications, and SaaS platforms. Currently seeking part-time opportunities
-        and internships in Seoul.
+        <small>
+          I'm a Computer Engineering student at Gachon University (GPA 4.42/4.5) with 3+ years of
+          professional experience building ERP systems, real-time applications, and SaaS platforms.
+          Currently seeking part-time opportunities and internships in Seoul.
+        </small>
       </p>
     </>
   );
   const five = (
-    <a className="email-link" href="/#contact">
-      Get In Touch
+    <a className="email-link" href="#about">
+      Want more information ?
     </a>
   );
 

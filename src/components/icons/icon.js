@@ -1,4 +1,5 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 import {
   IconAppStore,
@@ -15,6 +16,7 @@ import {
   IconPlayStore,
   IconStar,
   IconTwitter,
+  IconUpwork,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -47,6 +49,8 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'Upwork':
+      return <IconUpwork />;
     default:
       return <IconExternal />;
   }

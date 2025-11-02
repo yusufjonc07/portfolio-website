@@ -2,11 +2,12 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Yusufjon Akhmedov',
+    title: 'Yusufjon Ahmedov',
     description:
-      'Yusufjon Akhmedov is a Computer Engineering student at Gachon University with 3+ years of professional experience building ERP systems, real-time applications, and SaaS platforms.',
-    siteUrl: 'https://yusufjon.dev', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+      'Yusufjon Ahmedov is a software engineer specializing in building robust backend systems.',
+    siteUrl: 'https://yusuf-axmad.uz', // No trailing slash allowed!
+    image: '/og-me.png', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@yusufjon51030',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,11 +20,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Yusufjon Akhmedov',
-        short_name: 'Yusufjon Akhmedov',
+        name: 'Yusufjon Ahmedov',
+        short_name: 'Yusufjon Ahmedov',
         start_url: '/',
-        background_color: config.colors.darkNavy,
-        theme_color: config.colors.navy,
+        background_color: config.colors.green,
+        theme_color: config.colors.green,
         display: 'minimal-ui',
         icon: 'src/images/logo.png',
       },

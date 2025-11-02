@@ -21,7 +21,7 @@ const StyledAboutSection = styled.section`
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(4, minmax(140px, 200px));
     grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
@@ -46,6 +46,7 @@ const StyledText = styled.div`
     }
   }
 `;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -61,7 +62,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: #ccc;
 
     &:hover,
     &:focus {
@@ -126,14 +127,41 @@ const About = () => {
   }, []);
 
   const skills = [
-    'PHP (Yii2, Laravel)',
-    'Python (FastAPI)',
-    'JavaScript (React, Vue)',
-    'Node.js (Express)',
-    'SQL (PostgreSQL, MySQL)',
+    // Backend Languages & Frameworks
+    'PHP',
+    'Yii2',
+    'Laravel',
+    'Python',
+    'FastAPI',
+    'Express.js',
+
+    // Frontend & UI
+    'JavaScript',
+    'Vue.js',
+    'React.js',
+    'jQuery',
+    'Bootstrap',
+    'Tailwind CSS',
+
+    // Databases
+    'MySQL',
+    'PostgreSQL',
     'MongoDB',
+    'SQL',
+
+    // DevOps / Servers
     'Docker',
     'Linux/Ubuntu',
+    'Apache',
+    'Nginx',
+    'CI/CD pipelines',
+
+    // Tools & Testing
+    'GitHub',
+    'PyTest',
+    'PHPUnit',
+    'NumPy',
+    'Pandas',
   ];
 
   return (
@@ -152,7 +180,8 @@ const About = () => {
             <p>
               My development journey started in 2021 when I built my first production system—a SaaS
               CRM platform that's now used by 15+ carpet cleaning businesses. That project taught me
-              the importance of understanding real business needs and building maintainable solutions.
+              the importance of understanding real business needs and building maintainable
+              solutions.
             </p>
 
             <p>
@@ -179,7 +208,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

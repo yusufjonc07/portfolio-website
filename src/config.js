@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'yusupeu.dev@gmail.com',
+  email: 'studentyusufaxmad@gmail.com',
 
   socialMedia: [
     {
@@ -7,8 +7,12 @@ module.exports = {
       url: 'https://github.com/yusufjonc07',
     },
     {
+      name: 'Upwork',
+      url: 'https://www.upwork.com/freelancers/~01cd3f854f2c71c377',
+    },
+    {
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/yusufjon-ahmedov',
+      url: 'https://www.linkedin.com/in/yusufjon-ahmedov',
     },
   ],
 
@@ -16,10 +20,6 @@ module.exports = {
     {
       name: 'About',
       url: '/#about',
-    },
-    {
-      name: 'Education',
-      url: '/#education',
     },
     {
       name: 'Experience',

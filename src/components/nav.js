@@ -8,7 +8,7 @@ import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu, LanguageSwitcher } from '@components';
 import { IconLogo, IconHex } from '@components/icons';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -157,6 +157,13 @@ const Nav = ({ isHome }) => {
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
   const { t } = useTranslation();
+  const { language } = useI18next();
+
+  const resumes = {
+    en: 'Resume_Yusufjon_Akhmedov.pdf',
+    uz: 'Resume_Yusufjon_Akhmedov.pdf',
+    ko: '이력서_유수프존.pdf',
+  };
 
   const handleScroll = () => {
     setScrolledToTop(window.pageYOffset < 50);
@@ -205,7 +212,11 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a
+      className="resume-button"
+      href={`/${resumes[language]}`}
+      target="_blank"
+      rel="noopener noreferrer">
       {t('nav.resume')}
     </a>
   );

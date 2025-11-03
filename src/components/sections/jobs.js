@@ -6,7 +6,7 @@ import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -167,6 +167,7 @@ const StyledTabPanel = styled.div`
 
 const Jobs = () => {
   const { t } = useTranslation();
+  const { language } = useI18next();
   const data = useStaticQuery(graphql`
     query {
       jobs: allMarkdownRemark(
@@ -183,12 +184,17 @@ const Jobs = () => {
               url
             }
             html
+            fileAbsolutePath
           }
         }
       }
     }
   `);
-  const jobsData = data.jobs.edges;
+
+  // Filter jobs by current language
+  const jobsData = data.jobs.edges.filter(({ node }) =>
+    node.fileAbsolutePath.includes(`/jobs/${language}/`),
+  );
 
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);

@@ -2409,6 +2409,11 @@
   dependencies:
     prettier "^2.x.x"
 
+"@vercel/analytics@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.npmjs.org/@vercel/analytics/-/analytics-1.6.1.tgz"
+  integrity sha512-oH9He/bEM+6oKlv3chWuOOcp8Y6fo6/PSro8hEkgCW3pu9/OiCXiUpRUogDh3Fs3LH2sosDrx8CxeOLBEE+afg==
+
 "@vercel/webpack-asset-relocator-loader@1.7.3":
   version "1.7.3"
   resolved "https://registry.npmjs.org/@vercel/webpack-asset-relocator-loader/-/webpack-asset-relocator-loader-1.7.3.tgz"
@@ -9732,7 +9737,7 @@ react-transition-group@^4.3.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-"react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0 || ^0.0.0", react@^18.2.0, react@^18.3.1, react@^18.x, "react@>= 16.8.0", react@>=16.3.0, react@>=16.6.0, react@0.0.0-experimental-c8b778b7f-20220825, react@18.x:
+"react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^18 || ^19 || ^19.0.0-rc", "react@^18.0.0 || ^0.0.0", react@^18.2.0, react@^18.3.1, react@^18.x, "react@>= 16.8.0", react@>=16.3.0, react@>=16.6.0, react@0.0.0-experimental-c8b778b7f-20220825, react@18.x:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==

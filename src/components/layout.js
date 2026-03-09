@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
+import { Analytics } from '@vercel/analytics/next';
 
 const StyledContent = styled.div`
   display: flex;
@@ -56,6 +57,7 @@ const Layout = ({ children, location }) => {
       <div id="root">
         <ThemeProvider theme={theme}>
           <GlobalStyle />
+          <Analytics />
 
           <a className="skip-to-content" href="#content">
             Skip to Content

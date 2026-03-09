@@ -222,7 +222,6 @@ const StyledHeroSection = styled.section`
 // ─── Typewriter hook ───────────────────────────────────────────────────────────
 
 const ROLES = ['Software Engineer', 'ML Engineer', 'Full-Stack Developer', 'AI Builder'];
-
 function useTypewriter(words, speed = 80, pause = 1800) {
   const [display, setDisplay] = useState('');
   const [wordIdx, setWordIdx] = useState(0);
@@ -252,24 +251,27 @@ function useTypewriter(words, speed = 80, pause = 1800) {
 
   return display;
 }
-
 // ─── Component ─────────────────────────────────────────────────────────────────
 
-const STATS = [
-  { num: '3+', label: 'Years Exp.' },
-  { num: '20+', label: 'Projects' },
-  { num: '15+', label: 'ML Models' },
-];
-
 const Hero = () => {
+  const [yearsOfExperience, setYearsOfExperience] = useState(0);
+  const STATS = [
+    { num: `${yearsOfExperience  }+`, label: 'Years Exp.' },
+    { num: '20+', label: 'Projects' },
+    { num: '15+', label: 'ML Models' },
+  ];
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
   const { t } = useTranslation();
   const role = useTypewriter(ROLES);
 
   useEffect(() => {
-    if (prefersReducedMotion) {return;}
+    if (prefersReducedMotion) {
+      return;
+    }
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
+    setYearsOfExperience(new Date().getFullYear() - 2022);
+
     return () => clearTimeout(timeout);
   }, []);
 

@@ -7,11 +7,11 @@
     "resume": "Resume"
   },
   "hero": {
-    "greeting": "Hi, my name is",
-    "name": "Yusufjon Axmedov.",
-    "title": "Full-Stack Developer & CS Student.",
-    "description": "I'm a Computer Engineering student at Gachon University (GPA 4.42/4.5) with 3+ years of professional experience building ERP systems, real-time applications, and SaaS platforms. Currently seeking part-time opportunities and internships in Seoul.",
-    "cta": "Want more information ?"
+    "greeting": "Hey there — I'm",
+    "name": "Yusufjon Axmedov",
+    "title": "Software & ML Engineer",
+    "description": "I build intelligent, data-driven products — from pixel-perfect interfaces to custom machine learning models tailored to your problem.",
+    "cta": "Let's Work Together"
   },
   "about": {
     "title": "About Me",
